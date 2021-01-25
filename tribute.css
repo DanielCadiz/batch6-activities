@@ -1,0 +1,85 @@
+@font-face {
+    src: url(tribute-elements/opfont.ttf);
+    font-family: opfont;    
+}
+
+body {
+    background: url(tribute-elements/Characters.jpg) fixed;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PICTURE & QUOTE */
+.quote {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    color: white;
+    font-size: 35px;
+    font-style: italic;
+    font-family: opfont;
+    background-color: darkred;
+    padding: darkred;
+    padding: 20px;
+    width: 75%;
+    margin-top: 170px;
+    margin-bottom: 300px;
+    align-items: center;
+}
+
+.signature {
+    width: 300px;
+    height: 75px;
+}
+
+.img1, .message {
+    margin: 20px;
+}
+/* PICTURE & QUOTE */
+
+/* CAREER */
+.career {
+    color: white;
+    background-color: rgba(0, 0, 0, .9);
+    font-family: opfont;
+    padding: 25px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+h2, span1 {
+    font-size: 30px;
+}
+
+.careerRetrospect, .achievements {
+    font-size: 25px;
+}
+
+#onepiece {
+    padding-bottom: 100px;
+}
+
+.achievements {
+    margin-bottom: 30px;
+}
+
+span1 {
+    font-weight: bold;
+}
+/* CAREER */
+
+/* FOOTER */
+.luffy {
+    margin-bottom: 0px;
+    bottom: 0;
+}
+/* FOOTER */
