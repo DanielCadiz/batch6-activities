@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@font-face {
+    src: url(asset/mcLawsuit.ttf);
+    font-family: mcFont;    
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 75px;
+}
+
+body {
+    background: url(images/mcdo.png) no-repeat fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    height: 50px;
+    width: 75px;
+    margin-right: 0%;
+    padding-right: 0%;
+    border: 0px;
+}
+
+h1, p {
+    margin: 0;
+}
+
+.container {
+    position: absolute;
+    top: 15%;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 30px;
+    border-radius: 5px;
+    border-color: slategray;
+    border-style: solid;
+    height: 80%;
+    width: 25%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .13);
+}
+
+.firstHalf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.radioButton {
+    display: flex;
+    flex-direction: column;
+}
+
+.gender1, .gender2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.secondHalf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.input, .dropdown, .radioButton, .textArea, .msg {
+    background: transparent;
+}
+
+.input, #msg {
+    border: 0;
+    border-bottom: 2px solid slategray;
+}
+
+#msg {
+    height: 50%;
+    width: 100%;
+}
+
+input[type=submit] {
+    color: black;
+    background: slategray;
+    border: 0;
+    height: 35px;
+    width: 70px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.last {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#logo {
+    font-family: mcFont;
+    font-size: xx-large;
+    padding: 0;
+    margin: 0;
+    margin-left: 175px;
+}

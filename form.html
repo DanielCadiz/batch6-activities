@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="form.css">
+        <title>Form</title>
+    </head>
+    <body>
+        <div class="title">
+            <h1 id="title">Mcdonald's Survey Form</h1>
+            <p id="description">Fill up the form to show how much you love Mcdonald's</p>
+        </div>
+        <div class="container">
+            <form id="survey-form">
+                <!--First Half-->
+                <div class="firstHalf">
+                    <div class="name">
+                        <label id="name-laber" for="name">Name </label><br>
+                        <input id="name" class="input" type="text" name="name" size="40%" placeholder="e.g. Daniel Cadiz" required>
+                    </div>
+                    <br>
+                    <div class="email">
+                        <label id="email-label" for="email">Email </label><br>
+                        <input id="email" class="input" type="email" name="email" size="40%" placeholder="e.g. xxx@gmail.com" required>
+                    </div>
+                    <br>
+                    <div class="number">
+                        <label id="number-id" for="number">Contact # </label><br>
+                        <input id="number" class="input" type="tel" name="number" size="40%" placeholder="e.g. 12345678910" pattern="[0-9]{11}">
+                    </div>
+                </div>
+                <br>
+                <!--First Half-->
+                <!--Second Half-->
+                <div class="secondHalf">
+                    <!--Radio Button-->
+                    <div class="radioButton">
+                        <label id="radio-label" for="radio">Gender</label>
+                        <div class="gender1">
+                        <input id="radio1" type="radio" name="radio" value="Male">
+                        <label for="radio1">M</label>
+                        </div>
+                        <div class="gender2">
+                        <input id="radio2" type="radio" name="radio" value="Female">
+                        <label for="radio2">F</label>
+                        </div>
+                    </div>
+                    <br>
+                    <!--Radio Button-->
+                    <!--Dropdown-->
+                    <div class="dropdown">
+                        <label id="select-label" for="select">Category</label>
+                        <br>
+                        <select id="dropdown" name="select" required>
+                            <option value="" selected>--</option>
+                            <option value="Dine-in">Dine-in</option>
+                            <option value="Take-out">Take-out</option>
+                            <option value="Delivery-call">Delivery(via Call)</option>
+                            <option value="Delivery-online">Delivery(via Online)</option>
+                        </select>
+                    </div>
+                    <!--Dropdown-->
+                </div>
+                <br>
+                <!--Second Half-->
+                <!--Checkbox-->
+                <div class="checkBox">
+                    <label id="checkbox-label" for="checkbox">Rate how satisfied you are</label>
+                    <br>
+                    <input id="cb1" type="checkbox" name="checkbox" value="VS">
+                    <label for="cb1">Very Satisfied</label>
+                    <br>
+                    <input id="cb2" type="checkbox" name="checkbox" value="S">
+                    <label for="cb2">Satisfied</label>
+                    <br>
+                    <input id="cb3" type="checkbox" name="checkbox" value="N">
+                    <label for="cb3">Neither Satisfied nor Dissatisfied</label>
+                    <br>
+                    <input id="cb3" type="checkbox" name="checkbox" value="D">
+                    <label for="cb3">Dissatisfied</label>
+                    <br>
+                    <input id="cb3" type="checkbox" name="checkbox" value="VD">
+                    <label for="cb3">Very Dissatisfied</label>
+                </div>
+                <br>
+                <!--Checkbox-->
+                <!--Text Area-->
+                <div class="textArea">
+                    <label id="textArea-label" for="textArea">Feedback </label>
+                    <br>
+                    <textarea id="msg" name="textArea" placeholder="Write a message."></textarea>
+                </div>
+                <br>
+                <!--Text Area-->
+                <!--Submit Logo-->
+                <div class="last">
+                <input id="submit" type="submit" value="Submit">
+                <label id="logo">M</label>             
+                </div>
+                <!--Submit Logo-->
+            </form>
+        </div>
+    </body>
+</html>
