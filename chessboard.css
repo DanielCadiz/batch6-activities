@@ -1,0 +1,70 @@
+@font-face {
+    src: url(asset/magic1.ttf);
+    font-family: wonderland;
+}
+
+body {
+    background: url(images/castle.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+.bg {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1 {
+    font-family: wonderland;
+    font-size: 5vw;
+    color: black;
+}
+
+h1, .board {
+    text-align: center;
+    position: relative;
+    margin-left: 30vw;
+    margin-right: 30vw;
+}
+
+
+.board {
+    display: flex;
+    flex-direction: column-reverse;
+    border: 1px solid black;
+    width: 40vw;
+    height: 40vw;
+    opacity: .9;
+}
+
+.row{
+    display:flex;
+    align-items:stretch;
+}
+
+.white {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, .8);
+    width: 5vw;
+    height: 5vw;
+    font-size: 4vw;
+    border: black double;
+    box-sizing: border-box;
+}
+
+.black {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left, lightpink, slategray);
+    width: 5vw;
+    height: 5vw;
+    font-size: 4vw;
+    border: black double;
+    box-sizing: border-box;
+}
