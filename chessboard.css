@@ -19,8 +19,12 @@ body {
 
 h1 {
     font-family: wonderland;
-    font-size: 5vw;
-    color: black;
+    font-size: 8vw;
+    background: -webkit-linear-gradient(black, slategrey, lightpink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px black;
+    margin-bottom: 0%;
 }
 
 h1, .board {
