@@ -9,6 +9,7 @@
     box-sizing: border-box;
     justify-content: center;
     gap: 0;
+    cursor: url(asset/cursor.png), auto;
 }
 
 body {
@@ -76,4 +77,8 @@ h1 {
 
 .white {
     background-color: palegoldenrod;
+}
+
+.Bpiece:hover, .Wpiece:hover {
+    background-color: blue;
 }
