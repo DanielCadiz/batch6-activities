@@ -17,8 +17,8 @@ body {
     max-width: 100%;
     max-height: 100%;
     grid-template-columns: 32vw 35.3vw 32vw;
-    grid-template-rows: 5vw 35.35vw 1vw 20vw;
-    background: url(images/ngnlKing.jpg) fixed no-repeat;
+    grid-template-rows: 5% 5vw 35.35vw 1vw 20vw;
+    background: url(images/chessKing.png) fixed no-repeat;
     background-size: cover;
 }
 
@@ -26,17 +26,17 @@ h1 {
     font-family: ngnl;
     font-size: 4.5vw;
     text-align: center;
-    grid-area: 1 / 2 / 1 / 2 ;
-    background: -webkit-linear-gradient(crimson, black, cyan);
+    grid-area: 2 / 2 / 2 / 2 ;
+    background: -webkit-linear-gradient(deeppink, cyan);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 1px white;
 }
 
 .board {
     align-content: center;
     display: grid;
-    grid-area: 2 / 2 / 2 / 2;
+    grid-area: 3 / 2 / 3 / 2;
     grid-template-rows: repeat(8, 4.4vw);
     grid-template-columns: repeat(8, 4.4vw);
     padding: 8vw;
@@ -47,7 +47,7 @@ h1 {
 
 .music {
     display: grid;
-    grid-area: 4 / 2 / 4 / 2;
+    grid-area: 5 / 2 / 5 / 2;
     justify-content: center;
 }
 
@@ -58,25 +58,25 @@ h1 {
 }
 
 .Bpiece, .Wpiece {
-    background: -webkit-linear-gradient(crimson, black, cyan);
+    background: -webkit-linear-gradient(deeppink, black, cyan);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .Bpiece {
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 1px darkslategrey;
 }
 
 .Wpiece {
-    text-shadow: 1px 1px 1px white;
+    -webkit-text-stroke: 1px palegoldenrod;
 }
 
 .black {
-    background: linear-gradient(45deg, crimson, black, black, black, black, black, black, black, black, cyan);
+    background: linear-gradient(45deg, deeppink, black, black, black, black, black, black, black, black, cyan);
 }
 
 .white {
-    background-color: palegoldenrod;
+    background: linear-gradient(45deg, lightpink, white, lightpink);
 }
 
 .Bpiece:hover, .Wpiece:hover {
