@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkslategrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ty {
+    background-color: white;
+    border: 2px black solid;
+    width: 20rem;
+    height: 10rem;
+    font-family: 'Catamaran', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+}

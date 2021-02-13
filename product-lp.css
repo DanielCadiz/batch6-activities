@@ -1,3 +1,5 @@
+@import url("lightbox.css");
+
 *,
 *::before,
 *::after {
@@ -46,7 +48,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: space-evenly;
     left: 0;
-    top: 5%;
+    top: 0;
     z-index: 100;
 }
 
@@ -136,7 +138,7 @@ a {
     'img-6 img-6 img-4 img-5';
 }
 
-.gallery a{
+.gallery div {
     width: 100%;
     height: 12.5rem;
     background-position: center;
@@ -146,9 +148,10 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
-.gallery a i{
+.gallery div i{
     color: rgba(255, 255, 255, .6);
     font-size: 3rem;
     position: relative;
@@ -160,7 +163,7 @@ a {
     transition: opacity .5s;
 }
 
-.gallery a::before{
+.gallery div::before{
     content: '';
     position: absolute;
     width: 100%;
@@ -172,8 +175,8 @@ a {
     transition: opacity .5s;
 }
 
-.gallery a:hover i,
-.gallery a:hover::before {
+.gallery div:hover i,
+.gallery div:hover::before {
     opacity: 1;
 }
 
@@ -215,32 +218,52 @@ a {
     height: 10rem;
     position: relative;
     background-color: #1e1e24;
-    color: white;
+    color: lightgray;
     bottom: 0;
     font-family: 'Catamaran', sans-serif;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+}
+
+.footer_container {
+    width: 100%;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
 }
 
 .contacts {
-    width: 10rem;
+    width: 20rem;
+    grid-column: 2/2;
+    grid-row-start: 1;
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.contacts h2 {
-    align-self: center;
+h2 {
+    transform: translateY(20%);
 }
 
-.contacts div {
+.contact_container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
+}
+
+.contact_icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+    padding-right: .5rem;
+}
+
+.contact_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 .contacts i {
@@ -250,5 +273,63 @@ a {
 
 .contacts i:hover {
     cursor: pointer;
+}
+
+.subscribe {
+    grid-column: 3/3;
+    grid-row-start: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.email-form {
+    width: 100%;
+    display: inline-block;
+    background-color: #555;
+    position: relative;
+    border-radius: 20px;
+    line-height: 0;
+    margin-top: 1rem;
+}
+
+.email-form .form {
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    color: lightgrey;
+    background-color: transparent;
+    font-family: inherit;
+    margin: 0;
+    padding: 0 3rem 0 1.5rem;
+    width: 100%;
+    height: 2rem;
+    border-radius: 20px;
+}
+
+.email-form .submit {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2rem;
+    height: 2rem;
+    background-color: lightgray;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    color: #333;
+    cursor: pointer;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.submit:hover {
+    background-color: #333;
+    color: lightgray;
 }
 /* FOOTER */
