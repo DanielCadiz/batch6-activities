@@ -1,21 +1,40 @@
 <html>
     <head>
         <title>GD Product Landing Page</title>
+        <link rel="icon" href="product-lp/Glogo.png" type="image/icon">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="product-lp.css">
+        <link rel="stylesheet" href="new.css">
         <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
     </head>
     <body id="home">
         <header id="header">
             <img id="header-img" src="product-lp/GDlogo.png" alt="logo">
-            <div class="middle" id="mid1">👑</div>
-            <nav id="nav-bar">
-                <ul class="nav-link"><a href="#home">Home</a></ul>
-                <ul class="nav-link"><a href=".products">Products</a></ul>
-                <ul class="nav-link"><a href="#footer">Contacts</a></ul>
-            </nav>
         </header>
+        <nav id="nav-bar">
+            <ul class="nav-link">
+                <li>
+                    <a href="#home">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav-link">
+                <li>
+                    <a href="#products">
+                        <i class="fas fa-image"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav-link">
+                <li>
+                    <a href="#footer">
+                        <i class="fas fa-info-circle"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
         <div id="video-box">
             <img class="crown" src="product-lp/crown.png">
             <iframe id="video" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Febsha2002%2Fvideos%2F2522162161397403%2F&show_text=true&width=476" width="476" height="591"  scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
@@ -26,7 +45,7 @@
             <div class="middle">👑</div>
             <div class="line"></div>
         </div>
-        <div class="products">
+        <div id="products">
             <div class="gallery">
                 <a class="img-1" href="product-lp/shirtEverest.png">
                     <i class="icon ion-md-expand"></i>
@@ -48,12 +67,32 @@
                 </a>
             </div>
         </div>
-        <div class="divider">
+        <div class="divider" id="divider2">
             <div class="line"></div>
             <div class="middle">👑</div>
             <div class="line"></div>
         </div>
-        <form id="form"></form>
-        
+        <footer id="footer">
+            <div class="footer_container">
+                <div class="contacts">    
+                    <h2>Contact Us</h2>
+                    <div class="fb">
+                        <i class="fab fa-facebook"></i>
+                        <ul>facebook.com/ebsha2002</ul>
+                    </div>
+                    <div class="email">
+                        <i class="fas fa-envelope"></i>
+                        <ul>sharonestilo84@gmail.com</ul>
+                    </div>
+                    <div class="phone">
+                        <i class="fas fa-phone-square"></i>
+                        <ul>09167354005</ul>
+                    </div>
+                </div>
+            </div>
+            <form id="form">
+            </form>
+        </footer>
+        <script src="https://kit.fontawesome.com/8ac765edd2.js" crossorigin="anonymous"></script>
     </body>
 </html>
