@@ -94,7 +94,11 @@ a {
 
 #video {
     width: auto;
-    height: 40rem;
+    height: 32.5rem;
+    border-top: .5rem goldenrod outset;
+    border-left: .5rem goldenrod outset;
+    border-bottom: .5rem slateblue inset;
+    border-right: .5rem slateblue inset;
 }
 
 .crown {

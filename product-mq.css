@@ -9,3 +9,25 @@
         width: 15rem;
     }
 }
+
+@media screen and (max-width: 635px) {
+    .crown{
+        width: 5rem;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .crown{
+        display: none;
+    }
+
+    #video {
+        width: 8rem;
+    }
+
+    #header-img {
+        width: 15rem;
+        height: 5rem;
+        transform: translateY(50%);
+    }
+}
