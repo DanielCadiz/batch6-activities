@@ -6,10 +6,6 @@
 
 @media screen and (max-width: 900px) {
     .gallery {
-        display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    grid-gap: .5rem;
         grid-template-areas: 
         'img-1 img-1 img-1 img-1'
         'img-1 img-1 img-1 img-1'
