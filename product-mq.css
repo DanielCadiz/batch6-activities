@@ -1,0 +1,11 @@
+@media screen and (max-width: 1014px) {
+    .crown{
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #video {
+        width: 15rem;
+    }
+}
